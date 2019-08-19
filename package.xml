@@ -1,0 +1,25 @@
+<package>
+  <name>cbr_petrobras</name>
+  <version>0.5.1</version>
+  <description>contain files from the UFRN team of desafio_petrobras 2019</description>
+  <maintainer email="davihenriqueds@gmail.com">Davi Henrique</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author email="davihenriqueds@gmail.com">Davi Henrique</author>
+  <author email="davihenriqueds@gmail.com">Davi Henrique</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>hector_quadrotor_gazebo</run_depend>
+  <run_depend>hector_gazebo_worlds</run_depend>
+  <run_depend>hector_mapping</run_depend>
+  <run_depend>hector_geotiff</run_depend>
+  <run_depend>hector_trajectory_server</run_depend>
+
+</package>

@@ -1,0 +1,13 @@
+material base/Squares
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture base_marker.png
+      }
+    }
+  }
+}

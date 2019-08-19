@@ -1,0 +1,225 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <model name ='marcador1'>
+    <pose>5.5 2.5 1 0 0 0</pose>
+    <link name ='link'>
+      <pose>0 0 0 0 0 0</pose>
+      <collision name ='collision'>
+        <geometry>
+          <box><size>1 1 0.01</size></box>
+        </geometry>
+      </collision>
+      <visual name ='visual'>
+        <geometry>
+          <box><size>1 1 0.01</size></box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://box/materials/scripts</uri>
+            <uri>model://box/materials/textures</uri>
+            <name>petrobras/Squares</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+
+    <model name ='marcador2'>
+    <pose>6.5 4.5 1 0 0 0</pose>
+    <link name ='link'>
+      <pose>0 0 0 0 0 0</pose>
+      <collision name ='collision'>
+        <geometry>
+          <box><size>1 1 0.01</size></box>
+        </geometry>
+      </collision>
+      <visual name ='visual'>
+        <geometry>
+          <box><size>1 1 0.01</size></box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://box/materials/scripts</uri>
+            <uri>model://box/materials/textures</uri>
+            <name>petrobras/Squares</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+
+    <model name ='marcador3'>
+    <pose>2.5 6.5 1 0 0 0</pose>
+    <link name ='link'>
+      <pose>0 0 0 0 0 0</pose>
+      <collision name ='collision'>
+        <geometry>
+          <box><size>1 1 0.01</size></box>
+        </geometry>
+      </collision>
+      <visual name ='visual'>
+        <geometry>
+          <box><size>1 1 0.01</size></box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://box/materials/scripts</uri>
+            <uri>model://box/materials/textures</uri>
+            <name>petrobras/Squares</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+
+  <model name ='cilindro'>
+    <pose>4 4 1 0 1.57 1.3</pose>
+    <link name ='link'>
+      <pose>0 0 0 0 0 0</pose>
+      <collision name ='collision'>
+        <geometry>
+          <cylinder>
+            <radius>0.3</radius>
+            <length>8</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name ='visual'>
+        <geometry>
+          <cylinder>
+            <radius>0.3</radius>
+            <length>8</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>1 0.2 0 1</ambient>
+          <diffuse>1 0.2 0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+  </model>
+
+  <model name ='ground'>
+    <pose>4 4 0 0 0 0</pose>
+    <link name ='link'>
+      <pose>0 0 0 0 0 0</pose>
+      <collision name ='collision'>
+        <geometry>
+          <box><size>8 8 0.01</size></box>
+        </geometry>
+      </collision>
+      <visual name ='visual'>
+        <geometry>
+          <box><size>8 8 0.01</size></box>
+        </geometry>
+      <material>
+      <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Wood</name>
+      </script>
+      </material>
+      </visual>
+    </link>
+
+    <link name ='base_costeira'>
+      <pose>-3 -3.25 0.5 0 0 1.57</pose>
+      <collision name ='collision'>
+        <geometry>
+          <box><size>1.5 2 0.01</size></box>
+        </geometry>
+      </collision>
+      <visual name ='visual'>
+        <geometry>
+          <box><size>1.5 2 0.01</size></box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://box/materials/scripts</uri>
+            <uri>model://box/materials/textures</uri>
+            <name>base/Squares</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name ='marcador1'>
+      <pose>-2.5 0 1.5 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.56</mass>
+      </inertial>
+      <collision name ='collision'>
+        <geometry>
+          <box><size>1 1 0.01</size></box>
+        </geometry>
+      </collision>
+      <visual name ='visual'>
+        <geometry>
+          <box><size>1 1 0.01</size></box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://box/materials/scripts</uri>
+            <uri>model://box/materials/textures</uri>
+            <name>petrobras/Squares</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name ='marcador2'>
+      <pose>3 -3 1.5 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.56</mass>
+      </inertial>
+      <collision name ='collision'>
+        <geometry>
+          <box><size>1 1 0.01</size></box>
+        </geometry>
+      </collision>
+      <visual name ='visual'>
+        <geometry>
+          <box><size>1 1 0.01</size></box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://box/materials/scripts</uri>
+            <uri>model://box/materials/textures</uri>
+            <name>petrobras/Squares</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <joint name="marcador_plataforma1" type="fixed">
+      <pose>0 0 0 0 0 0</pose>
+      <child>marcador1</child>
+      <parent>link</parent>
+    </joint>
+
+    <joint name="marcador_plataforma2" type="fixed">
+      <pose>0 0 0 0 0 0</pose>
+      <child>marcador2</child>
+      <parent>link</parent>
+    </joint>
+
+    <joint name="marcador_base_costeira" type="fixed">
+      <pose>0 0 0 0 0 0</pose>
+      <child>base_costeira</child>
+      <parent>link</parent>
+    </joint>
+
+  </model>
+  </world>
+</sdf>

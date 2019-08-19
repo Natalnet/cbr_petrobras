@@ -1,0 +1,13 @@
+material petrobras/Squares
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ground_marker.png
+      }
+    }
+  }
+}
