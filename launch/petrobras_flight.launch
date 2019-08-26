@@ -9,7 +9,7 @@
 
   <!-- Spawn simulated quadrotor uav -->
   <include file="$(find hector_quadrotor_gazebo)/launch/spawn_quadrotor.launch" >
-    <arg name="model" value="$(find hector_quadrotor_description)/urdf/quadrotor_petrobras.gazebo.xacro"/>
+    <arg name="model" value="$(find hector_quadrotor_description)/urdf/quadrotor_petrobras_depthcam.gazebo.xacro"/>
     <arg name="controllers" value="
         controller/attitude
         controller/velocity
