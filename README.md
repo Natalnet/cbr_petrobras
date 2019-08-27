@@ -37,3 +37,80 @@ cd ~/desafio_petrobras
 catkin_make
 ```
 
+#Rodar o simulador
+
+```bash
+source ~/desafio_petrobras/devel/setup.bash
+roslaunch cbr_petrobras petrobras_flight.launch
+```
+
+**Controlando o drone**
+
+Antes de mais nada deve-se ativar os motores do drone com o comando:
+
+```bash
+rosservice call /enable_motors "enable:true"
+```
+
+que é confirmado com a mensagem *success: True*
+
+O pacote hector_quadrotor_teleop oferece 3 tipos de controle:
+
+Controle sony
+
+```bash
+roslaunch hector_quadrotor_teleop sony_dualshock3.launch
+```
+
+Controle xbox
+
+```bash
+roslaunch hector_quadrotor_teleop xbox_controller.launch
+```
+
+Alternativamente também é possível mover o drone pelo tópico */cmd_vel* escolhendo a velocidade desejada:
+
+Copie e cole o comando no terminal:
+```bash
+rostopic pub /cmd_vel 
+```
+aperte tab duas vezes para completar o resto da mensagem. Ai é só escolher a velocidade na dimensão desjeda.
+
+```bash
+rostopic pub /cmd_vel geometry_msgs/Twist "linear:
+  x: 0.0
+  y: 0.0
+  z: 0.0
+angular:
+  x: 0.0
+  y: 0.0
+  z: 0.0" 
+```
+
+Mais alternativamente ainda ***ALTERNATIVE INTENSIFIES***  você pode setar uma pose desejada para o drone no tópico */command/pose*
+
+```bash
+rostopic pub /command/pose geometry_msgs/PoseStamped "header: 
+  seq: 0
+  stamp:
+    secs: 0
+    nsecs: 0
+  frame_id: ''
+pose:
+  position:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  orientation:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0" 
+```
+
+
+Boa sorte.
+
+
+
+
