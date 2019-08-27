@@ -14,12 +14,13 @@ cd ~/desafio_petrobras
 wstool init src https://raw.github.com/tu-darmstadt-ros-pkg/hector_quadrotor/kinetic-devel/tutorials.rosinstall
 ```
 
-Pacotes adicionais
+Instale também esses pacotes
 
 
 ```bash
 sudo apt-get install ros-kinetic-geographic-info
 sudo apt-get install ros-kinetic-ros-control
+sudo apt-get install ros-kinetic-gazebo-ros-control
 ```
 
 **Clonar o repositório cbr_petrobras:**
