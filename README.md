@@ -49,7 +49,7 @@ roslaunch cbr_petrobras petrobras_flight.launch
 Antes de mais nada deve-se ativar os motores do drone com o comando:
 
 ```bash
-rosservice call /enable_motors "enable:true"
+rosservice call /enable_motors "enable: true"
 ```
 
 que é confirmado com a mensagem *success: True*
