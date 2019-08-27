@@ -37,14 +37,16 @@ cd ~/desafio_petrobras
 catkin_make
 ```
 
-# Rodar o simulador
+## Rodar o simulador
+
+Use os comandos:
 
 ```bash
 source ~/desafio_petrobras/devel/setup.bash
 roslaunch cbr_petrobras petrobras_flight.launch
 ```
 
-**Controlando o drone**
+## Controlando o drone
 
 Antes de mais nada deve-se ativar os motores do drone com o comando:
 
@@ -56,13 +58,13 @@ que é confirmado com a mensagem *success: True*
 
 O pacote hector_quadrotor_teleop oferece 3 tipos de controle:
 
-Controle sony
+**Controle sony**
 
 ```bash
 roslaunch hector_quadrotor_teleop sony_dualshock3.launch
 ```
 
-Controle xbox
+**Controle xbox**
 
 ```bash
 roslaunch hector_quadrotor_teleop xbox_controller.launch
