@@ -37,7 +37,7 @@ cd ~/desafio_petrobras
 catkin_make
 ```
 
-#Rodar o simulador
+# Rodar o simulador
 
 ```bash
 source ~/desafio_petrobras/devel/setup.bash
@@ -68,13 +68,13 @@ Controle xbox
 roslaunch hector_quadrotor_teleop xbox_controller.launch
 ```
 
-Alternativamente também é possível mover o drone pelo tópico */cmd_vel* escolhendo a velocidade desejada:
+Alternativamente também é possível mover o drone controlando a velocidade pelo tópico */cmd_vel*:
 
 Copie e cole o comando no terminal:
 ```bash
 rostopic pub /cmd_vel 
 ```
-aperte tab duas vezes para completar o resto da mensagem. Ai é só escolher a velocidade na dimensão desjeda.
+aperte tab duas vezes para completar o resto da mensagem. Ai é só escolher a velocidade na dimensão desejada.
 
 ```bash
 rostopic pub /cmd_vel geometry_msgs/Twist "linear:
@@ -95,22 +95,19 @@ rostopic pub /command/pose geometry_msgs/PoseStamped "header:
   stamp:
     secs: 0
     nsecs: 0
-  frame_id: ''
+  frame_id: 'world'
 pose:
   position:
-    x: 0.0
-    y: 0.0
-    z: 0.0
+    x: 2.0
+    y: 2.0
+    z: 2.0
   orientation:
     x: 0.0
     y: 0.0
-    z: 0.0
+    z: 1.0
     w: 0.0" 
 ```
 
+> Importante notar que o *frame_id* deve ser 'world'.
 
 Boa sorte.
-
-
-
-
