@@ -1,5 +1,9 @@
 Simulador usado pela equipe UFRN no Desafio de Robótica Petrobrás CBR 2019. O simulador roda no Ubuntu 16.04 ROS Kinetic.
 
+![cbr_sim](https://user-images.githubusercontent.com/2212793/64193224-bae94280-ce52-11e9-8a00-676d157d9d0f.png)
+
+![cbr_sim_rviz](https://user-images.githubusercontent.com/2212793/64193191-a6a54580-ce52-11e9-8eab-71795329b69f.png)
+
 # Instalação
 
 Instalação ROS -> https://omecatronico.com.br/blog/439-2/
