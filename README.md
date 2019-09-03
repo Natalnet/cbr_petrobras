@@ -1,4 +1,4 @@
-Simulador usado pela equipe UFRN no Desafio de Robótica Petrobrás CBR 2019. O simulador roda no ROS 16.04 Kinetic.
+Simulador usado pela equipe UFRN no Desafio de Robótica Petrobrás CBR 2019. O simulador roda no Ubuntu 16.04 ROS Kinetic.
 
 # Instalação
 
